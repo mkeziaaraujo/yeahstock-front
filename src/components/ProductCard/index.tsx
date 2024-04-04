@@ -1,11 +1,19 @@
 import { PencilSimple } from "@phosphor-icons/react";
 import { TypeView } from "../../TabView";
+import { Product } from "../../models/product";
+import { Link } from "react-router-dom";
 
 interface ProductCardProps {
   typeView: TypeView;
+  product: Product;
+  OnOpenModal: () => void;
 }
 
-export function ProductCard({ typeView = TypeView.COLUMN }: ProductCardProps) {
+export function ProductCard({
+  typeView = TypeView.COLUMN,
+  product,
+  OnOpenModal,
+}: ProductCardProps) {
   return (
     <div className="p-2 bg-[#323232] rounded-lg">
       {typeView === TypeView.COLUMN ? (
@@ -15,18 +23,22 @@ export function ProductCard({ typeView = TypeView.COLUMN }: ProductCardProps) {
           </div>
           <div className="mt-2">
             <div className="flex items-center justify-between">
-              <button className="text-white text-sm">Nome do Produto</button>
+              <button className="text-white text-sm" onClick={OnOpenModal}>
+                {product.title}
+              </button>
 
-              <PencilSimple size={20} className="text-blue-dark" />
+              <Link to={`/edit-product/${product.id}`}>
+                <PencilSimple size={20} className="text-blue-dark" />
+              </Link>
             </div>
             <div className="flex justify-between items-center mt-2">
               <p className="text-white text-sm">
                 <span className="text-gray-primary text-sm">Quantity:</span>
-                106
+                {product.quantity}
               </p>
               <p className="text-white text-sm">
                 <span className="text-gray-primary text-sm">Measure Un:</span>
-                106
+                {product.measure}
               </p>
             </div>
           </div>
@@ -38,29 +50,37 @@ export function ProductCard({ typeView = TypeView.COLUMN }: ProductCardProps) {
               <img src="/image.svg" alt="image" className="w-4 h-8s" />
             </div>
             <div>
-              <span className="text-white text-sm">Product Name</span>
+              <span className="text-white text-sm">{product.title}</span>
               <div className="flex flex-wrap mt-3 gap-6">
                 <p className="text-white text-sm">
                   <span className="text-gray-primary text-sm">Quantity: </span>
-                  106
+                  {product.quantity}
                 </p>
                 <p className="text-white text-sm">
                   <span className="text-gray-primary text-sm">
                     Measure Un.:
                   </span>
-                  106
+                  {product.measure}
                 </p>
                 <p className="text-white text-sm">
                   <span className="text-gray-primary text-sm">
                     Purchase Price:
                   </span>
-                  535
+                  {product.purchasePrice}
                 </p>
                 <p className="text-white text-sm">
                   <span className="text-gray-primary text-sm">
                     Sales Price:
                   </span>
-                  512
+                  {product.salesPrice}
+                </p>
+                <p className="text-white text-sm">
+                  <span className="text-gray-primary text-sm">Currency:</span>
+                  {product.currency}
+                </p>
+                <p className="text-white text-sm">
+                  <span className="text-gray-primary text-sm">Supplier:</span>
+                  {product.supplier}
                 </p>
               </div>
             </div>

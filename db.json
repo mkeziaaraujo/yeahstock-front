@@ -1,0 +1,110 @@
+{
+  "products": [
+    {
+      "id": "p010",
+      "title": "Product J",
+      "quantity": 60,
+      "measure": "units",
+      "salesPrice": 49.99,
+      "purchasePrice": 24.99,
+      "currency": "USD",
+      "supplier": "Supplier X",
+      "status": "completed",
+      "createdAt": "2024-01-20T14:15:00Z",
+      "description": "Premium quality with modern design aesthetics."
+    },
+    {
+      "title": "Product KKK",
+      "quantity": 90,
+      "measure": "boxes",
+      "purchasePrice": 34.99,
+      "salesPrice": 50,
+      "currency": "EUR",
+      "supplier": "Supplier Y",
+      "description": "Innovative features for enhanced user experience.",
+      "status": "active",
+      "id": "p011",
+      "createdAt": "2024-04-04T14:27:08.516Z"
+    },
+    {
+      "id": "p012",
+      "title": "Product L",
+      "quantity": 30,
+      "measure": "pieces",
+      "salePrice": 24.99,
+      "purchasePrice": 12.99,
+      "currency": "USD",
+      "supplier": "Supplier Z",
+      "status": "completed",
+      "createdAt": "2024-01-20T14:45:00Z",
+      "description": "Compact and portable design for convenience."
+    },
+    {
+      "id": "p013",
+      "title": "Product M",
+      "quantity": 100,
+      "measure": "units",
+      "salesPrice": 39.99,
+      "purchasePrice": 19.99,
+      "currency": "USD",
+      "supplier": "Supplier X",
+      "status": "active",
+      "createdAt": "2024-01-20T15:00:00Z",
+      "description": "Versatile functionality with user-friendly features."
+    },
+    {
+      "id": "p016",
+      "title": "Product P",
+      "quantity": 80,
+      "measure": "units",
+      "salesPrice": 49.99,
+      "purchasePrice": 24.99,
+      "currency": "USD",
+      "supplier": "Supplier X",
+      "status": "completed",
+      "createdAt": "2024-01-20T15:45:00Z",
+      "description": "Sleek design with advanced technological features."
+    },
+    {
+      "title": "Soulsplat Crochê",
+      "quantity": 1,
+      "measure": "15 cm diâmetro",
+      "purchasePrice": 180,
+      "salesPrice": 180,
+      "currency": "R$",
+      "supplier": "ConCrochê ",
+      "description": "Soulsplat de crochê mesa posta\nKit com 12 peças, sendo: 06 soulsplat e 06 porta copos",
+      "status": "active",
+      "id": "299d",
+      "createdAt": "2024-04-04T14:26:14.984Z"
+    },
+    {
+      "title": "Garrafa Stanley  com alça de silicone",
+      "quantity": 100,
+      "measure": "800 ml",
+      "purchasePrice": 25,
+      "salesPrice": 60,
+      "currency": "R$",
+      "supplier": "Shopee",
+      "description": "Réplica Premium\nGarrafa térmica 800 ml\nCor: Preta\nAcompanha canudo\n",
+      "status": "active",
+      "id": "fe92",
+      "createdAt": "2024-04-04T14:27:44.374Z"
+    },
+    {
+      "id": "7fb5",
+      "product": {
+        "title": "produto1",
+        "quantity": 10,
+        "measure": "5",
+        "purchasePrice": 5,
+        "salesPrice": 15,
+        "currency": "R$",
+        "supplier": "Kezia",
+        "description": "Um produto bem bacana",
+        "status": "active",
+        "createdAt": "2024-04-04T17:30:19.319Z"
+      }
+    }
+  ]
+}
