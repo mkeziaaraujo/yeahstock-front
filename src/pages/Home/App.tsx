@@ -130,7 +130,7 @@ function App() {
             className="grid data-[view=column]:md:grid-cols-3 data-[view=column]:lg:grid-cols-4 gap-6 mt-10"
             data-view={view}
           >
-            {products.map((product) => (
+            {products?.map((product) => (
               <ProductCard
                 product={product}
                 key={product.id}

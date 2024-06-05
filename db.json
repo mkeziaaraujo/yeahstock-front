@@ -90,21 +90,6 @@
       "status": "active",
       "id": "fe92",
       "createdAt": "2024-04-04T14:27:44.374Z"
-    },
-    {
-      "id": "7fb5",
-      "product": {
-        "title": "produto1",
-        "quantity": 10,
-        "measure": "5",
-        "purchasePrice": 5,
-        "salesPrice": 15,
-        "currency": "R$",
-        "supplier": "Kezia",
-        "description": "Um produto bem bacana",
-        "status": "active",
-        "createdAt": "2024-04-04T17:30:19.319Z"
-      }
     }
   ]
 }
